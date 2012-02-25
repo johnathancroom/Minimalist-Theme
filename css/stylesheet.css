@@ -1,0 +1,635 @@
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: top;
+  background: transparent;
+}
+
+article, aside, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+   If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
+img,
+object,
+embed {
+  max-width: 100%;
+}
+
+/* force a vertical scrollbar to prevent a jumpy page */
+html {
+  overflow-y: scroll;
+}
+
+/* we use a lot of ULs that aren't bulleted. 
+	don't forget to restore the bullets within content. */
+/*ul {list-style: none;}*/
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+td {
+  font-weight: normal;
+  vertical-align: top;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+pre {
+  white-space: pre;
+  /* CSS2 */
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  white-space: pre-line;
+  /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word;
+  /* IE */
+}
+
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+input[type="checkbox"] {
+  vertical-align: bottom;
+  *vertical-align: baseline;
+}
+
+select, input, textarea {
+  font: 99% sans-serif;
+}
+
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+/* Accessible focus treatment
+	people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active {
+  outline: none;
+}
+
+small {
+  font-size: 85%;
+}
+
+strong, th {
+  font-weight: bold;
+}
+
+td, td img {
+  vertical-align: top;
+}
+
+/* Make sure sup and sub don't screw with your line-heights
+	gist.github.com/413930 */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+}
+
+/* hand cursor on clickable elements */
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+button {
+  cursor: pointer;
+}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {
+  margin: 0;
+}
+
+/* make buttons play nice in IE */
+button {
+  width: auto;
+  overflow: visible;
+}
+
+/* let's clear some floats */
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+/*.row { background: #f4f4f4; margin-bottom: 10px; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; }*/
+/*.row .column, .row .columns { background: #e7e7e7; font-size: 11px; text-indent: 3px; padding-top: 6px; padding-bottom: 6px; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; }*/
+.row {
+  margin: 0 auto;
+}
+
+.column, .columns {
+  margin-left: 4.4%;
+  float: left;
+  min-height: 1px;
+  position: relative;
+}
+
+.column:first-child, .columns:first-child {
+  margin-left: 0;
+}
+
+/*[class*="column"] + [class*="column"]:last-child { float: right; }*/
+.row .one {
+  width: 4.3%;
+}
+
+.row .two {
+  width: 13%;
+}
+
+.row .three {
+  width: 21.679%;
+}
+
+.row .four {
+  width: 30.37%;
+}
+
+.row .five {
+  width: 39.1%;
+}
+
+.row .six {
+  width: 47.8%;
+}
+
+.row .seven {
+  width: 56.5%;
+}
+
+.row .eight {
+  width: 65.2%;
+}
+
+.row .nine {
+  width: 73.9%;
+}
+
+.row .ten {
+  width: 82.6%;
+}
+
+.row .eleven {
+  width: 91.3%;
+}
+
+.row .twelve {
+  width: 100%;
+}
+
+.row .offset-by-one {
+  margin-left: 13.1%;
+}
+
+.row .offset-by-two {
+  margin-left: 21.8%;
+}
+
+.row .offset-by-three {
+  margin-left: 30.5%;
+}
+
+.row .offset-by-four {
+  margin-left: 39.2%;
+}
+
+.row .offset-by-five {
+  margin-left: 47.9%;
+}
+
+.row .offset-by-six {
+  margin-left: 56.6%;
+}
+
+.row .offset-by-seven {
+  margin-left: 65.3%;
+}
+
+.row .offset-by-eight {
+  margin-left: 74.0%;
+}
+
+.row .offset-by-nine {
+  margin-left: 82.7%;
+}
+
+.row .offset-by-ten {
+  margin-left: 91.4%;
+}
+
+.row .centered {
+  float: none;
+  margin: 0 auto;
+}
+
+.row .offset-by-one:first-child {
+  margin-left: 8.7%;
+}
+
+.row .offset-by-two:first-child {
+  margin-left: 17.4%;
+}
+
+.row .offset-by-three:first-child {
+  margin-left: 26.1%;
+}
+
+.row .offset-by-four:first-child {
+  margin-left: 34.8%;
+}
+
+.row .offset-by-five:first-child {
+  margin-left: 43.5%;
+}
+
+.row .offset-by-six:first-child {
+  margin-left: 52.2%;
+}
+
+.row .offset-by-seven:first-child {
+  margin-left: 60.9%;
+}
+
+.row .offset-by-eight:first-child {
+  margin-left: 69.6%;
+}
+
+.row .offset-by-nine:first-child {
+  margin-left: 78.3%;
+}
+
+.row .offset-by-ten:first-child {
+  margin-left: 87%;
+}
+
+.row .offset-by-eleven:first-child {
+  margin-left: 95.7%;
+}
+
+/* Source Ordering */
+.push-two {
+  left: 17.4%;
+}
+
+.push-three {
+  left: 26.1%;
+}
+
+.push-four {
+  left: 34.8%;
+}
+
+.push-five {
+  left: 43.5%;
+}
+
+.push-six {
+  left: 52.2%;
+}
+
+.push-seven {
+  left: 60.9%;
+}
+
+.push-eight {
+  left: 69.6%;
+}
+
+.push-nine {
+  left: 78.3%;
+}
+
+.push-ten {
+  left: 87%;
+}
+
+.pull-two {
+  right: 17.4%;
+}
+
+.pull-three {
+  right: 26.1%;
+}
+
+.pull-four {
+  right: 34.8%;
+}
+
+.pull-five {
+  right: 43.5%;
+}
+
+.pull-six {
+  right: 52.2%;
+}
+
+.pull-seven {
+  right: 60.9%;
+}
+
+.pull-eight {
+  right: 69.6%;
+}
+
+.pull-nine {
+  right: 78.3%;
+}
+
+.pull-ten {
+  right: 87%;
+}
+
+/* Nicolas Gallagher's micro clearfix */
+.row:before, .row:after, .clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.row:after, .clearfix:after {
+  clear: both;
+}
+
+.row, .clearfix {
+  zoom: 1;
+}
+
+/*
+	Media Queries
+*/
+@media (max-width: 767px) {
+  .row {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .row .row .column, .row .row .columns {
+    padding: 0;
+  }
+
+  .column, .columns {
+    width: auto !important;
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .column:first-child, .columns:first-child {
+    margin-top: 0;
+  }
+
+  .column:last-child, .columns:last-child {
+    margin-right: 0;
+    float: none;
+  }
+
+  [class*="column"] + [class*="column"]:last-child {
+    float: none;
+  }
+
+  [class*="column"]:before, [class*="column"]:after {
+    content: "";
+    display: table;
+  }
+
+  [class*="column"]:after {
+    clear: both;
+  }
+
+  .offset-by-one, .offset-by-two, .offset-by-three, .offset-by-four, .offset-by-five, .offset-by-six, .offset-by-seven, .offset-by-eight, .offset-by-nine, .offset-by-ten, .offset-by-eleven, .centered {
+    margin-left: 0 !important;
+  }
+
+  .push-two, .push-three, .push-four, .push-five, .push-six, .push-seven, .push-eight, .push-nine, .push-ten {
+    left: auto;
+  }
+
+  .pull-two, .pull-three, .pull-four, .pull-five, .pull-six, .pull-seven, .pull-eight, .pull-nine, .pull-ten {
+    right: auto;
+  }
+}
+@font-face {
+  font-family: 'Alegreya';
+  src: url("../webfonts/Alegreya-Regular-webfont.eot");
+  src: url("../webfonts/Alegreya-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../webfonts/Alegreya-Regular-webfont.woff") format("woff"), url("../webfonts/Alegreya-Regular-webfont.ttf") format("truetype"), url("../webfonts/Alegreya-Regular-webfont.svg#AlegreyaRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+	Universal Styles
+*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/*
+	Typography
+*/
+body {
+  font-family: Trebuchet MS, sans-serif;
+  font-size: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Alegreya;
+  font-weight: normal;
+  margin: 35px 0 5px 0;
+}
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 3.8em;
+}
+
+h2 {
+  font-size: 2.6em;
+}
+
+h3 {
+  font-size: 2.0em;
+}
+
+h4 {
+  font-size: 1.8em;
+}
+
+p, ul, ol, nav {
+  font-size: 1.3em;
+  margin: 10px 0 0 0;
+}
+
+/*
+	Page Decoration
+*/
+body {
+  background: #0982c1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  border-bottom: 1px dotted #bbb;
+  color: #000;
+}
+
+.site-title {
+  border: 0;
+  color: #FFF;
+  -webkit-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.8);
+  -moz-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.8);
+  -ms-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.8);
+  -o-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.8);
+}
+
+p, ul, ol {
+  color: #444;
+}
+
+blockquote {
+  font-style: italic;
+  padding: 10px 30px;
+}
+
+.content {
+  background: #EEE;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+/*
+	Page Format
+*/
+body {
+  margin: 10px auto;
+  max-width: 768px;
+  padding: 0 10px;
+}
+
+ul, ol {
+  margin-left: 25px;
+}
+
+header,
+footer {
+  margin: 10px 10px;
+}
+
+nav {
+  position: absolute;
+  top: 2px;
+  right: 0;
+}
+nav a {
+  color: #FFF;
+  display: inline-block;
+  margin-left: 20px;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  padding: 30px;
+}
+
+footer .site-title {
+  padding-top: 10px;
+}

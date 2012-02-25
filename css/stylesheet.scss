@@ -1,0 +1,115 @@
+@import "default.scss";
+@import "grid.scss";
+@import "fontface.scss";
+@import "mixins.scss";
+
+/*
+	Universal Styles
+*/
+* {
+	@include prefix(box-sizing, border-box);
+	position: relative;
+}
+
+/*
+	Typography
+*/
+$mainFont: Trebuchet MS, sans-serif;
+$secondaryFont: Alegreya;
+body {
+	font-family: $mainFont;
+	font-size: 10px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $secondaryFont;
+	font-weight: normal;
+	margin: 35px 0 5px 0;
+	
+	&:first-child {
+		margin-top: 0;
+	}
+}
+h1 {
+	font-size: 3.8em;
+}
+h2 {
+	font-size: 2.6em;
+}
+h3 {
+	font-size: 2.0em;
+}
+h4 {
+	font-size: 1.8em;
+}
+p, ul, ol, nav {
+	font-size: 1.3em;
+	margin: 10px 0 0 0;
+}
+
+
+/*
+	Page Decoration
+*/
+body {
+	background: #0982c1;
+}
+h1, h2, h3, h4, h5, h6 {
+	border-bottom: 1px dotted #bbb;
+	color: #000;
+}
+.site-title {
+	border: 0;
+	color: #FFF;
+	@include prefix(text-shadow, 1px 1px 0px rgba(0,0,0,0.8));
+}
+p, ul, ol {
+	color: #444;
+}
+blockquote {
+	font-style: italic;
+	padding: 10px 30px;
+}
+.content {
+	background: #EEE;
+	@include prefix(border-radius, 5px);
+	@include prefix(box-shadow, 1px 1px 1px 0px rgba(0,0,0,0.3));
+}
+
+
+/*
+	Page Format
+*/
+body {
+	margin: 10px auto;
+	max-width: 768px;
+	padding: 0 10px;
+}
+ul, ol {
+	margin-left: 25px;
+}
+header,
+footer {
+	margin: 10px 10px;
+}
+nav {
+	position: absolute;
+	top: 2px;
+	right: 0;
+	
+	& a {
+		color: #FFF;
+		display: inline-block;
+		margin-left: 20px;
+		text-decoration: none;
+		
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+.content {
+	padding: 30px;
+}
+footer .site-title {
+	padding-top: 10px;
+}
