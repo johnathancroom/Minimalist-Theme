@@ -2,7 +2,10 @@
 @import "fontface.scss";
 @import "mixins.scss";
 
-$mainColor: #0982c1;
+$mainColor: #3b5998;
+$secondaryColor: #4b67a1;
+
+$pattern1: url(texture1.png);
 
 $mainFont: Trebuchet MS, sans-serif;
 $secondaryFont: Alegreya;
@@ -48,10 +51,12 @@ h4 {
 p, ul, ol, nav {
 	font-size: 1.3em;
 	margin: 10px 0 0 0;
-	line-height: 1.8em;
+	line-height: 2em;
 }
 pre {
 	font-size: 1.2em;
+	padding: 0 30px;
+	line-height: 1.8em;
 }
 .meta {
 	font-size: 1.2em;
@@ -78,8 +83,12 @@ body {
 	padding: 0 10px;
 }
 h1, h2, h3, h4, h5, h6 {
-	border-bottom: 1px dotted #bbb;
-	color: #000;
+	border-bottom: 1px dotted rgba(0,0,0, .07);
+	color: #222;
+	padding: 0 0 4px 0;
+}
+h1 {
+	border-bottom: 1px none rgba(0,0,0, .07);
 }
 ul, ol {
 	margin-left: 25px;
@@ -88,27 +97,33 @@ header,
 footer {
 	margin: 10px 10px;
 }
+header {
+	margin: 20px 10px 10px 10px;
+}
 nav {
 	position: absolute;
 	top: -10px;
 	right: 0;
+	@include prefix(text-shadow, 1px 1px 0px rgba(0,0,0,0.2));
 	
 	& a {
-		color: #FFF;
+		color: #F4F4F4;
 		display: inline-block;
 		margin-left: 5px;
 		padding: 10px;
 		text-decoration: none;
 		
 		&:hover {
-			text-decoration: underline;
+			color: #FFF;
+			text-decoration: none;
+			top: -2px;
 		}
 	}
 }
 .site-title {
 	border: 0;
 	color: #FFF;
-	@include prefix(text-shadow, 1px 1px 0px rgba(0,0,0,0.8));
+	@include prefix(text-shadow, 1px 1px 0px rgba(0,0,0,0.4));
 	
 	footer & {
 		padding-top: 10px;
@@ -119,9 +134,9 @@ blockquote {
 	padding: 10px 30px;
 }
 .content {
-	background: #EEE;
+	background: $pattern1;
 	padding: 30px;
-	@include prefix(border-radius, 5px);
+	@include prefix(border-radius, 3px);
 	@include prefix(box-shadow, 1px 1px 1px 0px rgba(0,0,0,0.3));
 }
 .meta {

@@ -205,10 +205,12 @@ h4 {
 p, ul, ol, nav {
   font-size: 1.3em;
   margin: 10px 0 0 0;
-  line-height: 1.8em; }
+  line-height: 2em; }
 
 pre {
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  padding: 0 30px;
+  line-height: 1.8em; }
 
 .meta {
   font-size: 1.2em; }
@@ -217,21 +219,25 @@ pre {
 	Page Styles
 */
 a {
-  color: #0982c1;
+  color: #3b5998;
   text-decoration: none; }
   a:hover, a:focus {
     text-decoration: underline; }
 
 body {
-  background: #0982c1;
+  background: #3b5998;
   color: #444;
   margin: 10px auto 20px auto;
   max-width: 768px;
   padding: 0 10px; }
 
 h1, h2, h3, h4, h5, h6 {
-  border-bottom: 1px dotted #bbb;
-  color: #000; }
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.07);
+  color: #222;
+  padding: 0 0 4px 0; }
+
+h1 {
+  border-bottom: 1px none rgba(0, 0, 0, 0.07); }
 
 ul, ol {
   margin-left: 25px; }
@@ -240,27 +246,37 @@ header,
 footer {
   margin: 10px 10px; }
 
+header {
+  margin: 20px 10px 10px 10px; }
+
 nav {
   position: absolute;
   top: -10px;
-  right: 0; }
+  right: 0;
+  -webkit-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+  -moz-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+  -ms-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+  -o-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2); }
   nav a {
-    color: #FFF;
+    color: #F4F4F4;
     display: inline-block;
     margin-left: 5px;
     padding: 10px;
     text-decoration: none; }
     nav a:hover {
-      text-decoration: underline; }
+      color: #FFF;
+      text-decoration: none;
+      top: -2px; }
 
 .site-title {
   border: 0;
   color: #FFF;
-  -webkit-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.8);
-  -moz-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.8);
-  -ms-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.8);
-  -o-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.8);
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.8); }
+  -webkit-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+  -moz-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+  -ms-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+  -o-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4); }
   footer .site-title {
     padding-top: 10px; }
 
@@ -269,13 +285,13 @@ blockquote {
   padding: 10px 30px; }
 
 .content {
-  background: #EEE;
+  background: url(texture1.png);
   padding: 30px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
   -webkit-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.3);
   -ms-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.3);
