@@ -222,7 +222,8 @@ a {
   color: #3b5998;
   text-decoration: none; }
   a:hover, a:focus {
-    text-decoration: underline; }
+    color: #1f4189;
+    text-decoration: none; }
 
 body {
   background: #3b5998;
@@ -247,27 +248,26 @@ footer {
   margin: 10px 10px; }
 
 header {
-  margin: 20px 10px 10px 10px; }
+  margin: 15px 10px 10px 10px; }
 
 nav {
   position: absolute;
   top: -10px;
   right: 0;
-  -webkit-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
-  -moz-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
-  -ms-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
-  -o-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2); }
+  -webkit-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
+  -moz-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
+  -ms-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
+  -o-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25); }
   nav a {
-    color: #F4F4F4;
+    color: #eceff5;
     display: inline-block;
     margin-left: 5px;
     padding: 10px;
     text-decoration: none; }
     nav a:hover {
       color: #FFF;
-      text-decoration: none;
-      top: -2px; }
+      text-decoration: none; }
 
 .site-title {
   border: 0;

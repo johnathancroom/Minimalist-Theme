@@ -3,7 +3,7 @@
 @import "mixins.scss";
 
 $mainColor: #3b5998;
-$secondaryColor: #4b67a1;
+$secondaryColor: #1f4189;
 
 $pattern1: url(texture1.png);
 
@@ -72,7 +72,8 @@ a {
 	
 	&:hover,
 	&:focus {
-		text-decoration: underline;
+		color: $secondaryColor;
+		text-decoration: none;
 	}
 }
 body {
@@ -98,16 +99,16 @@ footer {
 	margin: 10px 10px;
 }
 header {
-	margin: 20px 10px 10px 10px;
+	margin: 15px 10px 10px 10px;
 }
 nav {
 	position: absolute;
 	top: -10px;
 	right: 0;
-	@include prefix(text-shadow, 1px 1px 0px rgba(0,0,0,0.2));
+	@include prefix(text-shadow, 1px 1px 0px rgba(0,0,0,0.25));
 	
 	& a {
-		color: #F4F4F4;
+		color: #eceff5;
 		display: inline-block;
 		margin-left: 5px;
 		padding: 10px;
@@ -116,7 +117,6 @@ nav {
 		&:hover {
 			color: #FFF;
 			text-decoration: none;
-			top: -2px;
 		}
 	}
 }
