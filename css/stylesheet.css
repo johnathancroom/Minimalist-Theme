@@ -210,6 +210,9 @@ p, ul, ol, nav {
 pre {
   font-size: 1.2em; }
 
+.meta {
+  font-size: 1.2em; }
+
 /*
 	Page Styles
 */
@@ -278,6 +281,9 @@ blockquote {
   -ms-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.3);
   -o-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.3); }
+
+.meta {
+  color: #888; }
 
 /*
 	Media Queries

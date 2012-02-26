@@ -53,6 +53,9 @@ p, ul, ol, nav {
 pre {
 	font-size: 1.2em;
 }
+.meta {
+	font-size: 1.2em;
+}
 
 
 /*
@@ -120,6 +123,9 @@ blockquote {
 	padding: 30px;
 	@include prefix(border-radius, 5px);
 	@include prefix(box-shadow, 1px 1px 1px 0px rgba(0,0,0,0.3));
+}
+.meta {
+	color: #888;
 }
 
 
