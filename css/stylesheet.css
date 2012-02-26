@@ -5,10 +5,12 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
   outline: 0;
   font-size: 100%;
   vertical-align: top;
-  background: transparent; }
+  background: transparent;
+}
 
 article, aside, figure, footer, header, hgroup, nav, section {
-  display: block; }
+  display: block;
+}
 
 /* Responsive images and other embedded objects
    Note: keeping IMG here will cause problems if you're using foreground images as sprites.
@@ -16,51 +18,61 @@ article, aside, figure, footer, header, hgroup, nav, section {
 img,
 object,
 embed {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
 /* force a vertical scrollbar to prevent a jumpy page */
 html {
-  overflow-y: scroll; }
+  overflow-y: scroll;
+}
 
 /* we use a lot of ULs that aren't bulleted. 
 	don't forget to restore the bullets within content. */
 /*ul {list-style: none;}*/
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
   content: '';
-  content: none; }
+  content: none;
+}
 
 a {
   margin: 0;
   padding: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent; }
+  background: transparent;
+}
 
 del {
-  text-decoration: line-through; }
+  text-decoration: line-through;
+}
 
 abbr[title], dfn[title] {
   border-bottom: 1px dotted #000;
-  cursor: help; }
+  cursor: help;
+}
 
 /* tables still need cellspacing="0" in the markup */
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 th {
   font-weight: bold;
-  vertical-align: bottom; }
+  vertical-align: bottom;
+}
 
 td {
   font-weight: normal;
-  vertical-align: top; }
+  vertical-align: top;
+}
 
 hr {
   display: block;
@@ -68,10 +80,12 @@ hr {
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
-  padding: 0; }
+  padding: 0;
+}
 
 input, select {
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 pre {
   white-space: pre;
@@ -81,52 +95,65 @@ pre {
   white-space: pre-line;
   /* CSS 3 (and 2.1 as well, actually) */
   word-wrap: break-word;
-  /* IE */ }
+  /* IE */
+}
 
 input[type="radio"] {
-  vertical-align: text-bottom; }
+  vertical-align: text-bottom;
+}
 
 input[type="checkbox"] {
   vertical-align: bottom;
-  *vertical-align: baseline; }
+  *vertical-align: baseline;
+}
 
 select, input, textarea {
-  font: 99% sans-serif; }
+  font: 99% sans-serif;
+}
 
 table {
   font-size: inherit;
-  font: 100%; }
+  font: 100%;
+}
 
 /* Accessible focus treatment
 	people.opera.com/patrickl/experiments/keyboard/test */
 a:hover, a:active {
-  outline: none; }
+  outline: none;
+}
 
 small {
-  font-size: 85%; }
+  font-size: 85%;
+}
 
 strong, th {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 td, td img {
-  vertical-align: top; }
+  vertical-align: top;
+}
 
 /* Make sure sup and sub don't screw with your line-heights
 	gist.github.com/413930 */
 sub, sup {
   font-size: 75%;
   line-height: 0;
-  position: relative; }
+  position: relative;
+}
 
 sup {
-  top: -0.5em; }
+  top: -0.5em;
+}
 
 sub {
-  bottom: -0.25em; }
+  bottom: -0.25em;
+}
 
 /* standardize any monospaced elements */
 pre, code, kbd, samp {
-  font-family: monospace, sans-serif; }
+  font-family: monospace, sans-serif;
+}
 
 /* hand cursor on clickable elements */
 .clickable,
@@ -134,36 +161,43 @@ label,
 input[type=button],
 input[type=submit],
 button {
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 /* Webkit browsers add a 2px margin outside the chrome of form elements */
 button, input, select, textarea {
-  margin: 0; }
+  margin: 0;
+}
 
 /* make buttons play nice in IE */
 button {
   width: auto;
-  overflow: visible; }
+  overflow: visible;
+}
 
 /* let's clear some floats */
 .clearfix:before, .clearfix:after {
   content: "\0020";
   display: block;
   height: 0;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .clearfix:after {
-  clear: both; }
+  clear: both;
+}
 
 .clearfix {
-  zoom: 1; }
+  zoom: 1;
+}
 
 @font-face {
   font-family: 'BitterRegular';
   src: url("../webfonts/bitter-regular-webfont.eot");
   src: url("../webfonts/bitter-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../webfonts/bitter-regular-webfont.woff") format("woff"), url("../webfonts/bitter-regular-webfont.ttf") format("truetype"), url("../webfonts/bitter-regular-webfont.svg#BitterBold") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
 /*
 	Universal Styles
@@ -174,81 +208,100 @@ button {
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
-  position: relative; }
+  position: relative;
+}
 
 /*
 	Typography
 */
 body {
   font-family: Trebuchet MS, sans-serif;
-  font-size: 10px; }
+  font-size: 10px;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: BitterRegular;
   font-weight: normal;
-  margin: 35px 0 5px 0; }
-  h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
-    margin-top: 0; }
+  margin: 35px 0 5px 0;
+}
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+  margin-top: 0;
+}
 
 h1 {
-  font-size: 3.8em; }
+  font-size: 3.8em;
+}
 
 h2 {
-  font-size: 2.6em; }
+  font-size: 2.6em;
+}
 
 h3 {
-  font-size: 2.0em; }
+  font-size: 2.0em;
+}
 
 h4 {
-  font-size: 1.8em; }
+  font-size: 1.8em;
+}
 
 p, ul, ol, nav {
   font-size: 1.3em;
   margin: 10px 0 0 0;
-  line-height: 2em; }
+  line-height: 2em;
+}
 
 pre {
   font-size: 1.2em;
   padding: 0 30px;
-  line-height: 1.8em; }
+  line-height: 1.8em;
+}
 
 .meta {
-  font-size: 1.2em; }
+  font-size: 1.2em;
+}
 
 /*
 	Page Styles
 */
 a {
   color: #3b5998;
-  text-decoration: none; }
-  a:hover, a:focus {
-    color: #1f4189;
-    text-decoration: none; }
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: #1f4189;
+  text-decoration: none;
+}
 
 body {
   background: #3b5998;
   color: #444;
   margin: 10px auto 20px auto;
   max-width: 768px;
-  padding: 0 10px; }
+  padding: 0 10px;
+}
 
 h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px dotted rgba(0, 0, 0, 0.07);
   color: #222;
-  padding: 0 0 4px 0; }
+  padding: 0 0 4px 0;
+}
 
 h1 {
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.07); }
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.07);
+}
 
 ul, ol {
-  margin-left: 25px; }
+  margin-left: 25px;
+}
 
 header,
 footer {
-  margin: 10px 10px; }
+  margin: 10px 10px;
+}
 
 header {
-  margin: 15px 10px 10px 10px; }
+  margin: 15px 10px 10px 10px;
+}
 
 nav {
   position: absolute;
@@ -258,16 +311,19 @@ nav {
   -moz-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
   -ms-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
   -o-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25); }
-  nav a {
-    color: #eceff5;
-    display: inline-block;
-    margin-left: 5px;
-    padding: 10px;
-    text-decoration: none; }
-    nav a:hover {
-      color: #FFF;
-      text-decoration: none; }
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
+}
+nav a {
+  color: #eceff5;
+  display: inline-block;
+  margin-left: 5px;
+  padding: 10px;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #FFF;
+  text-decoration: none;
+}
 
 .site-title {
   border: 0;
@@ -276,13 +332,16 @@ nav {
   -moz-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
   -ms-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
   -o-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4); }
-  footer .site-title {
-    padding-top: 10px; }
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+}
+footer .site-title {
+  padding-top: 10px;
+}
 
 blockquote {
   font-style: italic;
-  padding: 10px 30px; }
+  padding: 10px 30px;
+}
 
 .content {
   background: url(texture1.png);
@@ -296,27 +355,36 @@ blockquote {
   -moz-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.3);
   -ms-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.3);
   -o-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.3); }
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
 
 .meta {
-  color: #888; }
+  color: #888;
+}
 
 /*
 	Media Queries
 */
 @media screen and (max-width: 767px) {
   body {
-    font-size: 11px; }
+    font-size: 11px;
+  }
 
   .site-title {
-    text-align: center; }
+    text-align: center;
+  }
 
   nav {
     position: relative;
     text-align: center;
-    top: -5px; }
-    nav a {
-      margin: 0 5px; } }
+    top: -5px;
+  }
+  nav a {
+    margin: 0 5px;
+  }
+}
 @media screen and (max-width: 480px) {
   h1.site-title {
-    font-size: 2.8em; } }
+    font-size: 2.8em;
+  }
+}

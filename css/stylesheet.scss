@@ -30,11 +30,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: $secondaryFont;
 	font-weight: normal;
-	margin: 35px 0 5px 0;
-	
-	&:first-child {
-		margin-top: 0;
-	}
 }
 h1 {
 	font-size: 3.8em;
@@ -50,18 +45,15 @@ h4 {
 }
 p, ul, ol, nav {
 	font-size: 1.3em;
-	margin: 10px 0 0 0;
-	line-height: 2em;
-}
-pre {
-	font-size: 1.2em;
-	padding: 0 30px;
-	line-height: 1.8em;
+	line-height: 1.5em;
 }
 .meta {
 	font-size: 1.2em;
 }
-
+pre {
+	font-size: 1.2em;
+	line-height: 1.4em;
+}
 
 /*
 	Page Styles
@@ -86,10 +78,22 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	border-bottom: 1px dotted rgba(0,0,0, .07);
 	color: #222;
+	margin: 35px 0 5px 0;
 	padding: 0 0 4px 0;
+	
+	&:first-child {
+		margin-top: 0;
+	}
 }
 h1 {
 	border-bottom: 1px dotted rgba(0,0,0, .07);
+}
+p, ul, ol, nav {
+
+	margin: 10px 0 0 0;
+}
+pre {
+	padding: 0 30px;
 }
 ul, ol {
 	margin-left: 25px;
@@ -149,7 +153,7 @@ blockquote {
 */
 @media screen and (max-width: 767px) {
 	body {
-		font-size: 11px;
+/*		font-size: 11px;*/
 	}
 	.site-title {
 		text-align: center;
@@ -166,6 +170,6 @@ blockquote {
 }
 @media screen and (max-width: 480px) {
 	h1.site-title {
-		font-size: 2.8em;
+		font-size: 2.6em;
 	}
 }
