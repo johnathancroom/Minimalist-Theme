@@ -8,7 +8,7 @@ $secondaryColor: #1f4189;
 $pattern1: url(texture1.png);
 
 $mainFont: Trebuchet MS, sans-serif;
-$secondaryFont: Alegreya;
+$secondaryFont: BitterRegular;
 
 $maxWidth: 768px;
 
@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0 0 4px 0;
 }
 h1 {
-	border-bottom: 1px none rgba(0,0,0, .07);
+	border-bottom: 1px dotted rgba(0,0,0, .07);
 }
 ul, ol {
 	margin-left: 25px;
